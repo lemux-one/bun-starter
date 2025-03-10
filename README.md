@@ -3,7 +3,9 @@
 Opinionated starter boilerplate for Bun projects using VSCode and Docker for a fully local, containerized workspace
 
 git clone --depth=1 https://github.com/lemux-one/bun-starter.git <new-repo-name>
+cd <new-repo-name>
 rm -rf .git
+git init .
 
 gh repo create <new-repo-name> --template="https://github.com/lemux-one/bun-starter.git"
 
