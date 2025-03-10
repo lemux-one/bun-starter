@@ -1,5 +1,5 @@
 {
-  "name": "Meer",
+  "name": "bun-starter",
   "dockerFile": "Dockerfile",
   "runArgs": ["--env-file", ".devcontainer/.env"],
   "appPort": [],
