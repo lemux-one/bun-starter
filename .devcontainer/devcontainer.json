@@ -1,0 +1,16 @@
+{
+  "name": "Meer",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--env-file", ".devcontainer/.env"],
+  "appPort": [],
+  "postCreateCommand": "sh .devcontainer/postCreate.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "oven.bun-vscode",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}
