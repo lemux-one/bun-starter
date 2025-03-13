@@ -2,8 +2,9 @@
   "name": "bun-starter",
   "dockerFile": "Dockerfile",
   "runArgs": ["--env-file", ".devcontainer/.env"],
-  "appPort": [],
+  "appPort": [3000],
   "postCreateCommand": "sh .devcontainer/postCreate.sh",
+  "postAttachCommand": "bun upgrade",
   "customizations": {
     "vscode": {
       "extensions": [
