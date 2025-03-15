@@ -1,16 +1,28 @@
 {
-  "name": "bun-starter",
+  "name": "bun-full-react",
+
+  // ### this section is for docker-compose based dev container
+  // "dockerComposeFile": "docker-compose.yml",
+  // "service": "app",
+  // "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  // ### this section is for single Dockerfile based dev container
   "dockerFile": "Dockerfile",
   "runArgs": ["--env-file", ".devcontainer/.env"],
-  "appPort": [3000],
-  "postCreateCommand": "sh .devcontainer/postCreate.sh",
-  "postAttachCommand": "bun upgrade",
+  // uncomment the following to expose a port
+  // "appPort": [3000],
+
+  // ### this section ensures a consistent workspace
+  "initializeCommand": "sh .devcontainer/scripts/initialize.sh",
+  "postCreateCommand": "sh .devcontainer/scripts/postCreate.sh",
+  "postAttachCommand": "sh .devcontainer/scripts/postAttach.sh",
   "customizations": {
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
         "oven.bun-vscode",
-        "streetsidesoftware.code-spell-checker"
+        "streetsidesoftware.code-spell-checker",
+        "bradlc.vscode-tailwindcss"
       ]
     }
   }
