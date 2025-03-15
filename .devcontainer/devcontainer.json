@@ -9,8 +9,7 @@
   // ### this section is for single Dockerfile based dev container
   "dockerFile": "Dockerfile",
   "runArgs": ["--env-file", ".devcontainer/.env"],
-  // uncomment the following to expose a port
-  // "appPort": [3000],
+  // "appPort": [3000], // expose port 3000 for the app
 
   // ### this section ensures a consistent workspace
   "initializeCommand": "sh .devcontainer/scripts/initialize.sh",
@@ -19,10 +18,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode",
-        "oven.bun-vscode",
-        "streetsidesoftware.code-spell-checker",
-        "bradlc.vscode-tailwindcss"
+        "oven.bun-vscode", // Bun support
+        "esbenp.prettier-vscode", // Prettier for code formatting
+        "streetsidesoftware.code-spell-checker" // Spell checker
+        // "bradlc.vscode-tailwindcss" // Tailwind CSS support (optional)
       ]
     }
   }
