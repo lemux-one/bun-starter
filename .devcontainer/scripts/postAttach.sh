@@ -1,1 +1,2 @@
 bun upgrade
+bun install
