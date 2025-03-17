@@ -1,5 +1,5 @@
 {
-  "name": "bun-full-react",
+  "name": "bun-starter",
 
   // ### this section is for docker-compose based dev container
   // "dockerComposeFile": "docker-compose.yml",
@@ -8,7 +8,7 @@
 
   // ### this section is for single Dockerfile based dev container
   "dockerFile": "Dockerfile",
-  "runArgs": ["--env-file", ".devcontainer/.env"],
+  // "runArgs": ["--env-file", ".devcontainer/.env"], // force env file usage if needed
   // "appPort": [3000], // expose port 3000 for the app
 
   // ### this section ensures a consistent workspace
@@ -21,6 +21,7 @@
         "oven.bun-vscode", // Bun support
         "esbenp.prettier-vscode", // Prettier for code formatting
         "streetsidesoftware.code-spell-checker" // Spell checker
+        // ### add any other extensions needed for project
         // "bradlc.vscode-tailwindcss" // Tailwind CSS support (optional)
       ]
     }
