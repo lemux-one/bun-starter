@@ -1,4 +1,4 @@
-EXAMPLE_ENV=".devcontainer/example.env"
+EXAMPLE_ENV=".devcontainer/.env.example"
 ENV_FILE=".devcontainer/.env"
 if [ ! -f "$ENV_FILE" ]; then
   cp "$EXAMPLE_ENV" "$ENV_FILE"

@@ -39,7 +39,7 @@ bun install
 
 - Search and replace "bun-starter" with `<new-repo-name>` using VSCode's Search & Replace features.
 
-4. Copy `.devcontainer/example.env` to `.devcontainer/.env` and edit it accordingly
+4. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
 
 5. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
 
