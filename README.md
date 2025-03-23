@@ -35,16 +35,22 @@ gh repo create <new-repo-name> --template="lemux-one/bun-starter"
 git config core.autocrlf input
 ```
 
-2. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
+3. (Optional, but recommended) Convert all files from CRLF to LF before opening the project inside the container. Failing to do so might (and probably will) cause some initialization scripts to fail:
+
+```sh
+find . -type f -print0 | xargs -0 dos2unix -ic0 | xargs -0 dos2unix -b
+```
+
+4. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
 
 - Search and replace "bun-starter" with `<new-repo-name>` using VSCode's Search & Replace features.
 
-3. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
+5. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
 
-4. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
+6. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
 
-5. Reopen in container [Dev Containers: Reopen in Container] VSCode command
+7. Reopen in container [Dev Containers: Reopen in Container] VSCode command
 
-6. Run `bun dev` in a console
+8. Run `bun dev` in a console
 
-7. Edit/Code at will ...
+9. Edit/Code at will ...
