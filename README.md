@@ -29,6 +29,12 @@ gh repo create <new-repo-name> --template="https://github.com/lemux-one/bun-star
 gh repo create <new-repo-name> --template="lemux-one/bun-starter"
 ```
 
+2. Set proper Git settings to handle CRLF/LF conversion issues from Windows to Unix (this is important since the idea is to work inside a Linux-powered container):
+
+```sh
+git config core.autocrlf input
+```
+
 2. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
 
 - Search and replace "bun-starter" with `<new-repo-name>` using VSCode's Search & Replace features.
