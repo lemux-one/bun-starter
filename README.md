@@ -29,22 +29,16 @@ gh repo create <new-repo-name> --template="https://github.com/lemux-one/bun-star
 gh repo create <new-repo-name> --template="lemux-one/bun-starter"
 ```
 
-2. Open folder with VSCode
-
-```sh
-bun install
-```
-
-3. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
+2. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
 
 - Search and replace "bun-starter" with `<new-repo-name>` using VSCode's Search & Replace features.
 
-4. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
+3. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
 
-5. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
+4. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
 
-6. Reopen in container [Dev Containers: Reopen in Container] VSCode command
+5. Reopen in container [Dev Containers: Reopen in Container] VSCode command
 
-7. Run `bun dev` in a console
+6. Run `bun dev` in a console
 
-8. Edit/Code at will ...
+7. Edit/Code at will ...
